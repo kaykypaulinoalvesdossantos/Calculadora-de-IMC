@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="/assets/img/img.svg" alt="">
+        </section>
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">Calculadora de IMC</h1>
+                <div class="input-box">
+                    <label>Peso em KG</label>
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="text" inputmode="numeric" id="weight" required>
+                    <span>Kg</span>
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input type="text" inputmode="numeric" id="height" required>
+                    <span>M</span>
+                </div>
+                <button id="calculate">Calcular</button>
+            </form>
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span> Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="more_info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm#:~:text=IMC%20em%20adultos&text=Índices%20abaixo%20de%2018.5%20não,das%20vezes%2C%20de%20ordem%20estética.">Mair Informações sobre o IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="/assets/js/script.js"></script>
+</html>
